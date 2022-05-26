@@ -6,8 +6,58 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nav{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav__item{
+  list-style:none;
+  margin-right:10px;
+}
+.cards{
+ display: flex;
+ /*overflow-x: scroll;
+ -webkit-overflow-scrolling: touch;
+ margin: 0;
+ padding: 0;*/
+ width:100%;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.card{
+  margin: 2.4rem 0;
+  width: 30%;
+  list-style:none;
+  margin-right:10px;
+}
+.card:last-child{
+margin: 0;
+}
+.card__image{
+  width: 80%;
+}
+.button--totop{
+  width: 50px;
+  height: 50px;
+  margin-right:15px;
+  margin-bottom:15px;
+  border-radius:50%;
+  background:#F2F0E9;/*背景色*/
+  color: #333;/*マークの色*/
+  box-shadow: 2px 3px 3px  rgb(0 0 0 / 10%);
+  position: relative;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button--totop::after{
+  position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: solid 2px #697b91;
+    border-right: solid 2px #697b91;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 45%;
+    left: 45%;
 }
